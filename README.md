@@ -1,6 +1,6 @@
-#Mood News
+# Mood News
 [Project decription]
 
-##Components
+## Components
 
-##What we used
+## What we used
