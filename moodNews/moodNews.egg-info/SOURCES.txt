@@ -1,0 +1,9 @@
+MANIFEST.in
+README.txt
+moodNews/__init__.py
+moodNews/moodNews.py
+moodNews.egg-info/PKG-INFO
+moodNews.egg-info/SOURCES.txt
+moodNews.egg-info/dependency_links.txt
+moodNews.egg-info/requires.txt
+moodNews.egg-info/top_level.txt

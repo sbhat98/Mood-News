@@ -1,0 +1,1 @@
+from .moodNews import app
