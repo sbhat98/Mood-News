@@ -1,10 +1,11 @@
 import requests
 
+
 def general():
     url = ('https://newsapi.org/v2/top-headlines?'
-       'country=us&'
-        'category=general&'
-       'apiKey=f3b01ca524d746819e1be1936466410c')
+           'country=us&'
+           'category=general&'
+           'apiKey=f3b01ca524d746819e1be1936466410c')
     response = requests.get(url)
     rep = response.json()
     x = rep.get("articles")
@@ -13,6 +14,8 @@ def general():
         y.append(urls.get("url"))
     print(y)
     print(len(y))
+    return y
+
 
 def business():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -28,6 +31,8 @@ def business():
 
     print(y)
     print(len(y))
+    return y
+
 
 def entertainment():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -43,6 +48,8 @@ def entertainment():
 
     print(y)
     print(len(y))
+    return y
+
 
 def health():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -58,6 +65,8 @@ def health():
 
     print(y)
     print(len(y))
+    return y
+
 
 def science():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -73,6 +82,8 @@ def science():
 
     print(y)
     print(len(y))
+    return y
+
 
 def sports():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -88,6 +99,8 @@ def sports():
 
     print(y)
     print(len(y))
+    return y
+
 
 def technology():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -103,3 +116,17 @@ def technology():
 
     print(y)
     print(len(y))
+    return y
+
+
+def overall():
+    url = ('https://newsapi.org/v2/top-headlines?'
+           'country=us&'
+           'apiKey=f3b01ca524d746819e1be1936466410c')
+    response = requests.get(url)
+    rep = response.json()
+    x = rep.get("articles")
+    y = []
+    for urls in x:
+        y.append(urls.get("url"))
+    return y
