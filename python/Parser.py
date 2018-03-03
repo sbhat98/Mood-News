@@ -12,7 +12,8 @@ def get_json(url):
     article = Article(url)
     article.download()
     article.parse()
-
+    if len(article.text) < 20:
+        return None
     return tone_analyzer.tone(article.text,
                               content_type="text/plain",  # CHANGE THIS IF CHANGING tone_input
                               sentences=False,
@@ -33,7 +34,18 @@ def get_urls_with_threshold(url_list, category, threshold=0.5, num_articles=5):
     i = 0
     for url in url_list:
         json_from_url = get_json(url)
-        if get_tone_num(json_from_url, category) >= threshold and i < num_articles:
+        if json_from_url is None:
+            continue
+        if get_tone_num(json_from_url, category) >= threshold:
             return_list.append(url)
             i = i + 1
+            if i == num_articles:
+                return return_list
     return return_list
+
+
+if __name__ == '__main__':
+    a = Article('http://www.bellinghamherald.com/news/article203293519.html')
+    a.download()
+    a.parse()
+    print(a.text)

@@ -12,9 +12,8 @@ def general():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-    print(y)
-    print(len(y))
     return y
+
 
 def business():
     url = ('https://newsapi.org/v2/top-headlines?'
@@ -27,9 +26,6 @@ def business():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
@@ -44,9 +40,6 @@ def entertainment():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
@@ -61,9 +54,6 @@ def health():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
@@ -78,9 +68,6 @@ def science():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
@@ -95,9 +82,6 @@ def sports():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
@@ -112,9 +96,6 @@ def technology():
     y = []
     for urls in x:
         y.append(urls.get("url"))
-
-    print(y)
-    print(len(y))
     return y
 
 
