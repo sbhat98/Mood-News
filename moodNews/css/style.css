@@ -1,0 +1,101 @@
+/* Your custom styles */
+
+.view {
+  background: url("pic/atlanta.jpg")no-repeat center center;
+  background-size: cover;
+  height:90vh;
+  opacity: .7;
+}
+
+.view-picBg {
+  background: url("pic/atlanta.jpg")no-repeat center center;
+  background-size: cover;
+  height:40vh;
+  opacity: .7;
+
+  text-align: center; 
+  position: relative;
+}
+
+img.deckpic{
+  width:200px;
+  height:200px;
+  margin:auto;
+}
+
+img.circle{
+  border-radius:100%;
+  
+  width:200px;
+  height:200px;
+
+  margin: auto; 
+  position: absolute; 
+  top:0; 
+  bottom:0; 
+  left:0; 
+  right: 0;
+}
+
+.arrow{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Standard syntax */
+@keyframes arrowMove {
+  25%  {bottom: 20px;}
+  75%  {bottom: 20px}
+  100% {opacity: 1px}
+}
+
+/* Standard syntax */
+@keyframes arrowMove2 {
+  25%  {bottom: 10px;}
+  75%  {bottom: 10px}
+  100% {opacity: 1px}
+}
+
+.runArrow{
+
+    height:50px;
+    width:50px;
+    background:none;
+    position: relative;
+    -webkit-animation: arrowMove 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: arrowMove 2s infinite;
+    
+}
+
+.runArrow2{
+
+  height:50px;
+  width:50px;
+  background:none;
+  position: relative;
+  -webkit-animation: arrowMove2 2s infinite; /* Safari 4.0 - 8.0 */
+  animation: arrowMove2 2s infinite;
+  
+}
+
+h1.bold{
+  font-weight:800;
+}
+h2.bold{
+  font-weight:600;
+}
+
+.carousel-indicators li{
+background: blue;
+}
+
+.carousel-indicators .active {
+  background-color: blue !important;
+  background: blue !important;
+  height: 15px!important;
+  width: 15px!important;
+}
+
+h5{
+  font-weight: 500 !important;
+}
