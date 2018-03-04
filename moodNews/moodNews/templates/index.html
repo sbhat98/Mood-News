@@ -25,28 +25,70 @@
             <!-- Navbar brand -->
             <a class="navbar-brand" href="#"> MOOD NEWS </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                            <!--<span class="sr-only">(current)</span>-->
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{ url_for('api') }}">APIs</a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="app.html">App</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
         <!--/.Navbar-->
 
+
+
         <div class="view intro-2 " style="">
             <div class="full-bg-img">
-                <div class="rgba-blue-light flex-center">
-                    <div class="container text-center white-text wow fadeInUp"->
-                        <h1 class="bold"> Inspiration</h1>
-                        <h2 class="bold">Mood News is created to help people understand their feeling better.</h2>
-                        <br>
-                        <h1 class="bold">Solution</h5>
-                        <h2 class="bold">This is the solution ... </h2>
+                <div class="rgba-blue-light flex-center" style="position: relative">
+                    <div class="container text-center white-text wow fadeInUp" ->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title" style="text-align:center; color:black">Welcome!</h2>
+                                <p class="card-text" style="text-align:center">How are you feeling today?</p>
+                                <CENTER>
+                                    <button type="button" class="btn btn-warning">JOY</button>
+                                    <button type="button" class="btn btn-blue-grey">SADNESS</button>
+                                    <button type="button" class="btn btn-elegant">FEAR</button>
+                                    <button type="button" class="btn btn-danger">ANGER</button>
+                                    <button type="button" class="btn btn-yellow">CURIOUS</button>
+                                    <button type="button" class="btn btn-primary">OPEN MINDED</button>
+                                </CENTER>
+                            </div>
+                        </div>
                     </div>
+                    <!--
+                    <div class="arrow">
+                        <img src="css/pic/singleArrow.png" class=" runArrow">
+                        <img src="css/pic/bigArrow.png" class=" runArrow2" >
+                    </div>
+                -->
                 </div>
             </div>
-
         </div>
     </header>
 
     <!--Main Navigation-->
 
-    <!--Main Layout-->
+
+    <!--Main Layout
     <main class="text-center py-5">
         <div class="card">
             <div class="card-body">
@@ -58,14 +100,13 @@
                     <button type="button" class="btn btn-elegant">FEAR</button>
                     <button type="button" class="btn btn-danger">ANGER</button>
                     <button type="button" class="btn btn-yellow">CURIOUS</button>
-                    <button type="button" class="btn btn-success">OPTIMISTIC</button>
                     <button type="button" class="btn btn-primary">OPEN MINDED</button>
                 </CENTER>
             </div>
         </div>
 
     </main>
-    <!--Main Layout-->
+    Main Layout-->
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
